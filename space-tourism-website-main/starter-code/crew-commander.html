@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/crew.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <div id="preloader"></div>
+  <div class="container">
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="assets/shared/logo.svg" alt="">
+        </div>
+        <div class="hamburger-btn">
+          <img src="../starter-code/assets/shared/icon-hamburger.svg" alt="" onclick="show()" id="open-btn">
+        </div>
+        <div class="right-sec">
+          <div class="line"></div>
+          <nav id="navigation">
+            <a href="index.html"><span>00</span>Home</a>
+            <a href="destination-moon.html"><span>01</span>Destination</a>
+            <a href="javascript:void(0)" class="active"><span>02</span>Crew</a>
+            <a href="technology-vehicle.html"><span>03</span>Technology</a>
+            <img src="../starter-code/assets/shared/icon-close.svg" alt="" onclick="remove()" class="close-btn">
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="inner-main">
+        <h1><span>02</span>Meet your crew</h1>
+        <div class="gr-one">
+          <h1>Commander</h1>
+          <p class="first">Douglas Hurley</p>
+          <p class="inner-t">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+            and former NASA astronaut. He launched into space for the third time as 
+            commander of Crew Dragon Demo-2.
+          </p>
+          <div class="gr-two">
+            <a href="javascript:void(0)" class="dot active2"></a>
+            <a href="./crew-specialist.html" class="dot"></a>
+            <a href="./crew-pilot.html" class="dot"></a>
+            <a href="./crew-engineer.html" class="dot"></a>
+          </div>
+        </div>
+      </div>
+      <img src="assets/crew/image-douglas-hurley.png" class="commander" alt="">
+      <div class="hr1"></div>
+
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

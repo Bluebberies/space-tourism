@@ -1,0 +1,594 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Bellefair', serif;
+    background: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg") no-repeat;
+    background-size: cover;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.container{
+    height: 100vh;
+}
+
+.close-btn{
+    position: absolute;
+    left: 200px;
+    top: 55px;
+    display: none;
+}
+
+.hamburger-btn{
+    display: none;
+}
+
+.logo img{
+    margin-top: .6rem;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#navigation{
+    /* position: absolute; */
+    width: 700px;
+    height: 76px; 
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#navigation a{
+    height: 19px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    margin-top: 1.8rem;
+    padding-bottom: 44px;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.active{
+    border-bottom: 3px solid #FFFFFF;
+} 
+
+#navigation a:active{
+    border-bottom: 3px solid #FFFFFF;
+} 
+
+#navigation a:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+} 
+
+
+nav a span{
+    margin-right: .7rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px
+} 
+
+.right-sec{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: -447px;
+    top: 37px;
+    background: #FFFFFF;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 18rem;
+    margin-top: 5rem;
+}
+
+main h1{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+main span{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-right: 1rem;
+
+}
+
+.inner-main img{
+    width: 443px;
+    height: 28rem;
+}
+
+.inner-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.gr-one{
+    display: flex;
+    flex-direction: column;
+}
+
+.gr-two{
+    display: flex;
+    gap: 1.4rem;
+    margin-top: -3rem;
+}
+
+.gr-two a{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 1.8rem;
+    padding-bottom: 14px;
+}
+
+.gr-two a:focus{
+    border-bottom: 3px solid #FFFFFF;
+} 
+
+.gr-two a:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+} 
+
+
+.gr-one h1{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 115px;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.gr-one .inner-t{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #D0D6F9;
+    width: 23rem;
+    margin-top: 1rem;
+}
+
+.hr{
+    width: 360px;
+    background: #383B4B;
+    opacity: 0.25;
+    height: 2px;
+    margin-top: 4rem;
+}
+
+.l-division{
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.l-division .l-division1 .first{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+
+.l-division .l-division1 .second{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: .5rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#preloader{
+    background: #000  url("../space-tourism-website-main/starter-code/assets/loading.gif") no-repeat center center;
+    margin-top: -25px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 1231px) {
+    .line{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg") no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    #navigation{
+        width: 432px;
+        height: 76px;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+        margin-left: 16rem;
+    }
+    
+    #navigation a{
+        height: 19px;
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #FFFFFF;
+        margin-top: 1.8rem;
+        padding-bottom: 44px;
+        text-decoration: none;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+
+    nav a span{
+        display: none;
+    } 
+
+    main{
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    main h1{
+        font-size: 24px;
+    }
+
+    main span{
+        font-size: 25px;
+    }
+
+    .inner-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -1rem;
+        margin-left: -1rem;
+        gap: 4rem
+    }
+
+    .inner-main img{
+        width: 270px;
+        height: 15rem;
+    }
+
+    .gr-one{
+        /* margin-left: 3rem; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gr-one h1{
+        font-size: 63px;
+        margin-top: 0rem;
+    }
+
+    .gr-one .inner-t {
+        width: 33rem;
+        margin-top: -1rem;
+    }
+
+    .hr{
+        width: 617px;
+        margin-top: 3rem;
+    }
+
+    .l-division1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .l-division{
+        gap: 4rem;
+    }
+    
+    .l-division .l-division1 .first{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body{
+        background: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg") no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    #navigation{
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        left: -10.2rem;
+        width: 514px;
+        height: 102vh;
+        display: none;
+        gap: 12rem;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        margin-left: 23rem;
+        padding-left: 2rem;
+        margin-right: -6px;
+        margin-top: -91px;
+        padding-top: 4rem;
+    }
+    
+    #navigation a{
+        font-size: 35px;
+        padding-bottom: 53px;
+        display: flex;
+        margin-bottom: 4rem;
+        height: -4rem;
+        margin-right: 17rem;
+        padding-top: 2rem
+    }
+
+    #navigation a:not(:nth-child(1)){
+        padding-top: -18rem;
+    }
+
+    nav a span{
+        display: block;
+        font-size: 39px;
+    } 
+
+    .hamburger-btn{
+        display: block;
+        margin-left: 571px;
+        margin-top: 16px;
+    }
+
+    .hamburger-btn img{
+        width: 40px;
+    }
+
+    .close-btn{
+        display: block;
+        margin-top: -14px;
+        margin-left: 14rem;
+        width: 40px;
+    }
+
+    .wrapper{
+        margin-top: 2rem;
+        width: 42rem;
+    }
+
+    main h1{
+        font-size: 3rem;
+    }
+
+    main span{
+        font-size: 3rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+
+    .inner-main{
+        margin-top: 4rem;
+    }
+
+    .inner-main img{
+        width: 412px;
+        height: 25rem;
+    }
+
+    .gr-two a{
+        font-size: 30px;
+    }
+
+    .gr-one h1{
+        font-size: 98px;
+        margin-top: 2rem
+    }
+
+    .gr-one .inner-t{
+        font-size: 2rem;
+        width: 35rem;
+        margin-top: 2rem;
+        line-height: 2rem;
+    }
+
+    .hr{
+    opacity: 0.5;  
+    }
+
+    .l-division{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .l-division .l-division1 .first {
+        font-size: 31px;
+    }
+
+    .l-division .l-division1 .second{
+        font-size: 53px;
+        margin-top: 3rem;
+    } 
+
+}
+
+@media only screen and (max-width: 375px) {
+    #navigation{
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        left: -10.2rem;
+        width: 250px;
+        height: 102vh;
+        display: none;
+        gap: 12rem;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        margin-left: 18rem;
+        padding-left: 2rem;
+        margin-right: -6px;
+        margin-top: -60px;
+        padding-top: 4rem;
+    }
+    
+    #navigation a{
+        font-size: 16px;
+        padding-bottom: 32px;
+        display: inline-flex;
+        margin-bottom: -4rem;
+        height: -4rem;
+        margin-right: 7rem;
+    }
+
+    #navigation a:not(:nth-child(1)){
+        padding-top: -18rem;
+    }
+
+    nav a span{
+        display: block;
+        font-size: 14px;
+    } 
+
+
+    body{
+        background: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-mobile.jpg") no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .logo img{
+        width: 2rem;
+    }
+
+    .wrapper{
+        width: 21rem;
+        margin-left: 1rem;
+        margin-top: 1rem
+    }
+ 
+    .hamburger-btn{
+        display: block;
+        margin-left: 258px;
+        margin-top: 16px;
+    }
+
+    .close-btn{
+        display: block;
+        margin-top: -23px;
+    }
+
+    main{
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+
+    main h1{
+        font-size: 17px;
+    }
+
+    main span{
+        font-size: 17px;
+    }
+
+    .inner-main{
+        margin-left: -4rem;
+        margin-top: -1rem
+    }
+
+    .inner-main img{
+        width: 177px;
+        height: 11rem
+    }
+
+    .gr-two{
+        margin-top: -4rem;
+    }
+
+    .gr-one h1{
+        font-size: 54px;
+        margin-top: -1rem
+    }
+
+    .gr-one .inner-t{
+        width: 19rem;
+        margin-top: -2rem;
+        margin-left: 1rem;
+    }
+
+    .hr{
+        width: 308px;
+        margin-top: 1rem;
+    }
+
+    .l-division{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

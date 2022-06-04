@@ -1,0 +1,577 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Bellefair', serif;
+    background: url("../space-tourism-website-main/starter-code/assets/technology/background-technology-desktop.jpg") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    height: 100vh;
+}
+
+.close-btn{
+    position: absolute;
+    left: 200px;
+    top: 55px;
+    display: none;
+}
+
+.hamburger-btn{
+    display: none;
+}
+
+.logo img{
+    margin-top: .6rem;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#navigation{
+    /* position: absolute; */
+    width: 700px;
+    height: 76px; 
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#navigation a{
+    height: 19px;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+    margin-top: 1.8rem;
+    padding-bottom: 44px;
+    text-decoration: none;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+#navigation a:active{
+    border-bottom: 3px solid #FFFFFF;
+} 
+
+#navigation a:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+} 
+
+
+nav a span{
+    margin-right: .7rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px
+} 
+
+.active{
+    border-bottom: 3px solid #FFFFFF;
+} 
+
+.right-sec{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    left: -447px;
+    top: 37px;
+    background: #FFFFFF;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 18rem;
+    margin-top: 3rem;
+}
+
+main h1{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+main span{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    margin-right: 1rem;
+}
+
+.inner-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10rem; */
+    margin-top: 3rem;
+}
+
+.gr-one{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: 0.1fr 1fr;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.gr-two{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.inner-main img{
+    width: 450px;
+    height: 29rem;
+    margin-left: 7.4rem;
+}
+
+#preloader{
+    background: #000  url("../space-tourism-website-main/starter-code/assets/loading.gif") no-repeat center center;
+    margin-top: -25px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+
+.gr-two a{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 0.7rem;
+    width: 4rem;
+    height: 4rem;
+    border: .1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 376rem;
+    text-decoration: none;
+    background-color: #0B0D17;
+    color: #FFFFFF;
+}
+
+.gr-two a:hover{
+    border: .1px solid rgba(255, 255, 255);
+}
+
+.gr-one .gr-two a.active2{
+    background-color: #FFFFFF;
+    color: #0B0D17;
+}
+
+.side p.first{
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+}
+
+.side h1{
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 64px;
+    color: #FFFFFF;
+    margin-top: 1rem;
+}
+
+.side p.inner-t{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    color: #D0D6F9;
+    width: 29rem;
+    margin-top: 1.6rem;
+}
+
+@media only screen and (max-width: 1231px) {
+    .line{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background: url("../space-tourism-website-main/starter-code/assets/technology/background-technology-tablet.jpg") no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    #navigation{
+        width: 432px;
+        height: 76px;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+        margin-left: 16rem;
+    }
+    
+    #navigation a{
+        height: 19px;
+        font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        color: #FFFFFF;
+        margin-top: 1.8rem;
+        padding-bottom: 44px;
+        text-decoration: none;
+        font-style: normal;
+        text-transform: uppercase;
+    }
+
+    nav a span{
+        display: none;
+    } 
+
+    main{
+        margin-left: 3rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+    
+    main h1{
+        font-size: 24px;
+    }
+
+    main span{
+        font-size: 25px;
+    }
+
+    .inner-main{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        /* gap: 10rem; */
+        margin-top: 3rem;
+    }
+
+    .gr-one{
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+        align-items: center;
+    }
+    
+    .gr-two{
+        display: flex;
+        flex-direction: row;
+        gap: 1.7rem;
+    }
+
+    .inner-main img{
+        width: 768px;
+        height: 18rem;
+        margin-left: -3rem;
+    }
+    
+    .gr-two a{
+        width: 3rem;
+        height: 3rem;
+        padding-top: 0.4rem
+    }
+
+    .side h1{
+        font-size: 42px;
+    }
+
+    .side{
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side p.first {
+        font-size: 23px;
+    }
+
+    .side p.inner-t{
+        width: 31rem
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body{
+        background: url("../space-tourism-website-main/starter-code/assets/technology/background-technology-tablet.jpg") no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    #navigation{
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        left: -10.2rem;
+        width: 514px;
+        height: 102vh;
+        display: none;
+        gap: 12rem;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        margin-left: 23rem;
+        padding-left: 2rem;
+        margin-right: -6px;
+        margin-top: -91px;
+        padding-top: 4rem;
+    }
+    
+    #navigation a{
+        font-size: 35px;
+        padding-bottom: 53px;
+        display: flex;
+        margin-bottom: 4rem;
+        height: -4rem;
+        margin-right: 17rem;
+        padding-top: 2rem
+    }
+
+    #navigation a:not(:nth-child(1)){
+        padding-top: -18rem;
+    }
+
+    nav a span{
+        display: block;
+        font-size: 39px;
+    } 
+
+    .hamburger-btn{
+        display: block;
+        margin-left: 571px;
+        margin-top: 16px;
+    }
+
+    .hamburger-btn img{
+        width: 40px;
+    }
+
+    .close-btn{
+        display: block;
+        margin-top: -14px;
+        margin-left: 14rem;
+        width: 40px;
+    }
+
+    .wrapper{
+        margin-top: 2rem;
+        width: 42rem;
+    }
+
+    main h1{
+        font-size: 3rem;
+        margin-left: 3rem;
+    }
+
+    main span{
+        font-size: 3rem;
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+
+    .inner-main img {
+        width: 720px;
+        height: 26rem;
+        margin-top: 3rem
+    }
+
+    .gr-one{
+        margin-top: 5rem;
+    }
+
+    .gr-two a {
+        width: 6rem;
+        height: 6rem;
+        padding-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .side p.first {
+        font-size: 29px;
+    }
+
+    .side h1 {
+        font-size: 50px;
+        margin-left: -2rem
+    }
+
+    .side p.inner-t {
+        width: 34rem;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+}
+
+
+@media only screen and (max-width: 375px) {
+    #navigation{
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        left: -10.2rem;
+        width: 250px;
+        height: 102vh;
+        display: none;
+        gap: 12rem;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        margin-left: 18rem;
+        padding-left: 2rem;
+        margin-right: -6px;
+        margin-top: -60px;
+        padding-top: 4rem;
+    }
+    
+    #navigation a{
+        font-size: 16px;
+        padding-bottom: 32px;
+        display: inline-flex;
+        margin-bottom: -4rem;
+        height: -4rem;
+        margin-right: 7rem;
+    }
+
+    #navigation a:not(:nth-child(1)){
+        padding-top: -18rem;
+    }
+
+    nav a span{
+        display: block;
+        font-size: 14px;
+    } 
+
+
+    body{
+        background: url("../space-tourism-website-main/starter-code/assets/technology/background-technology-mobile.jpg") no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .logo img{
+        width: 2rem;
+    }
+
+    .wrapper{
+        width: 21rem;
+        margin-left: 1rem;
+        margin-top: 1rem
+    }
+ 
+    .hamburger-btn{
+        display: block;
+        margin-left: 258px;
+        margin-top: 16px;
+    }
+
+    .close-btn{
+        display: block;
+        margin-top: -23px;
+    }
+
+    main{
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+
+    main h1{
+        font-size: 17px;
+    }
+
+    main span{
+        font-size: 17px;
+    }
+
+    .inner-main img{
+        width: 375px;
+        height: 11rem;
+        margin-left: -5rem;
+    }
+
+    .inner-main{
+        margin-top: 2rem;
+    }
+
+    .gr-one{
+        margin-left: -6rem;
+        margin-top: -3rem;
+    }
+
+    .gr-two a {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding-top: 0.1rem;
+    }
+
+    .side h1 {
+        font-size: 24px;
+        margin-top: 0rem;
+    }
+
+    .side{
+        margin-top: -1rem;
+    }
+
+    .side p.first {
+        font-size: 20px;
+    }
+
+    .side p.inner-t {
+        width: 21rem;
+        margin-top: 0rem;
+    }
+}
