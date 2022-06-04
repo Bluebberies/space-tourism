@@ -7,7 +7,6 @@ body{
     font-family: 'Bellefair', serif;
     background: url("../space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg") no-repeat;
     background-size: cover;
-    /* width: 100vw; */
     height: 100vh;
 }
 
@@ -139,7 +138,6 @@ p.one, p.two, p.three, p.four{
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    /* width: 27rem; */
     color: #D0D6F9;
     margin-top: 1rem;
 
@@ -166,7 +164,7 @@ main button{
 
 #preloader{
     background: #000  url("../space-tourism-website-main/starter-code/assets/loading.gif") no-repeat center center;
-    margin-top: -25px;
+    margin-top: -16px;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -174,7 +172,6 @@ main button{
 }
 
 main button:hover{
-    /* background: #FFFFFF; */
     outline: 50px solid rgba(255, 255, 255, 0.1);
     transition: 1s;
     
@@ -187,16 +184,6 @@ main button:hover{
 }
 
 @media only screen and (max-width: 768px) {
-    /* .wrapper{
-        margin-left: 3rem;
-        gap: 20rem;
-    } */
-
-    /* .container{
-        height: 80%;
-        width: 50%;
-    } */
-
     body{
         background: url("../space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg") no-repeat;
         background-size: cover;
@@ -461,177 +448,3 @@ main button:hover{
         margin-top: -2rem;
     }
 }
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.wrapper{
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 1.3rem;
-    gap: 12rem;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-}
-
-main p:first-child{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 2.7px;
-    color: #D0D6F9;
-
-}
-
-main h1{
-    font-family: 'Bellefair', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 100px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.large-text{
-    font-family: 'Barlow', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-    text-align: center;
-    color: #D0D6F9;
-}
-
-main button{
-    width: 150px;
-    height: 150px;
-    font-family: 'Bellefair', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    border-radius: 80px;
-    text-align: center;
-    letter-spacing: 1.25px;
-    margin-left: 5rem;
-    margin-top: 5rem;
-    color: #0B0D17;
-}
-
-main button:hover{
-    /* background: #FFFFFF; */
-    /*
-    outline: 50px solid rgba(255, 255, 255, 0.1);
-    transition: 1s;
-    
-}
-
-nav{
-    width: 0;
-    /* display: none; */
-    /*
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(81.5485px);    /* width: 0; */
-    /*
-    margin-top: 5rem;
-    margin-left: 2rem;
-
-    line-height: 60px;
-
-}
-
-nav a{
-}
-
-
-.close-btn{
-    position: absolute;
-    left: 200px;
-    top: 55px;
-}
-    /* .hamburger-btn{
-
-} */
-
-
-/* .wrapper{ */
-    /* display: grid; */
-    /* flex-direction: row; */
-    /* justify-content: center;
-    align-items: center; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* gap: 29rem; */
-/* } */
-
-/* nav{
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 770px;
-    display: grid;
-    /* z-index: -1; */
-/* } */
-
-/* nav a{
-    text-decoration: none;
-    color: var(--white);
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7px;
-    margin-left: 2rem;
-}
-
-nav a span{
-    margin-right: .7rem;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7px
-} */ 
-
-/* .line{
-    position: absolute;
-    width: 400px;
-    height: 1px;
-    left: 190px;
-    /* margin-left: 25rem; */
-    /* z-index: 2;
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.25; */
-/* }  */
-

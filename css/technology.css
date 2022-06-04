@@ -165,7 +165,7 @@ main span{
 
 #preloader{
     background: #000  url("../space-tourism-website-main/starter-code/assets/loading.gif") no-repeat center center;
-    margin-top: -25px;
+    margin-top: -16px;
     height: 100vh;
     width: 100%;
     position: fixed;
