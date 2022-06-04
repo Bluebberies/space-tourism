@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/crew.css">
+  <link rel="stylesheet" href="../css/destination.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
@@ -25,44 +25,54 @@
           <img src="assets/shared/logo.svg" alt="">
         </div>
         <div class="hamburger-btn">
-          <img src="../starter-code/assets/shared/icon-hamburger.svg" alt="" onclick="show()" id="open-btn">
+          <img src="assets/shared/icon-hamburger.svg" alt="" onclick="show()" id="open-btn">
         </div>
         <div class="right-sec">
           <div class="line"></div>
           <nav id="navigation">
             <a href="../index.html"><span>00</span>Home</a>
-            <a href="destination-moon.html"><span>01</span>Destination</a>
-            <a href="javascript:void(0)" class="active"><span>02</span>Crew</a>
+            <a href="javascript:void(0)" class="active"><span>01</span>Destination</a>
+            <a href="crew-commander.html"><span>02</span>Crew</a>
             <a href="technology-vehicle.html"><span>03</span>Technology</a>
-            <img src="../starter-code/assets/shared/icon-close.svg" alt="" onclick="remove()" class="close-btn">
+            <img src="assets/shared/icon-close.svg" alt="" onclick="remove()" class="close-btn">
           </nav>
         </div>
       </div>
     </header>
 
     <main>
+      <h1><span>01</span>Pick your destination</h1>
       <div class="inner-main">
-        <h1><span>02</span>Meet your crew</h1>
+        <img src="assets/destination/image-moon.png" alt="">
         <div class="gr-one">
-          <h1>Commander</h1>
-          <p class="first">Douglas Hurley</p>
-          <p class="inner-t">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-            and former NASA astronaut. He launched into space for the third time as 
-            commander of Crew Dragon Demo-2.
-          </p>
           <div class="gr-two">
-            <a href="javascript:void(0)" class="dot active2"></a>
-            <a href="./crew-specialist.html" class="dot"></a>
-            <a href="./crew-pilot.html" class="dot"></a>
-            <a href="./crew-engineer.html" class="dot"></a>
+            <a href="javascript:void(0)" class="active">Moon</a>
+            <a href="./destination-mars.html">Mars</a>
+            <a href="./destination-europa.html">Europa</a>
+            <a href="./destination-titan.html">Titan</a>
+          </div>
+          <h1>Moon</h1>
+          <p class="inner-t">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+            regain perspective and come back refreshed. While you’re there, take in some history 
+            by visiting the Luna 2 and Apollo 11 landing sites.
+          </p>
+          <div class="hr"></div>
+          <div class="l-division">
+            <div class="l-division1">
+              <p class="first">Avg. distance</p>
+              <p class="second">384,400 km</p>
+            </div>
+            <div  class="l-division1">
+              <p class="first">Est. travel time</p>
+              <p class="second">3 days</p>
+            </div>
           </div>
         </div>
       </div>
-      <img src="assets/crew/image-douglas-hurley.png" class="commander" alt="">
-      <div class="hr1"></div>
-
     </main>
+  </div>
 
-    <script src="../script.js"></script>
+  <script src="../script.js"></script>
+
 </body>
 </html>

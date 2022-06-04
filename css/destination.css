@@ -5,9 +5,8 @@
 
 body{
     font-family: 'Bellefair', serif;
-    background: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg") no-repeat;
+    background: url("../starter-code/assets/destination/background-destination-desktop.jpg") no-repeat;
     background-size: cover;
-    /* width: 100vw; */
     height: 100vh;
 }
 
@@ -38,7 +37,6 @@ body{
 }
 
 #navigation{
-    /* position: absolute; */
     width: 700px;
     height: 76px; 
     display: flex;
@@ -241,7 +239,7 @@ main span{
 }
 
 #preloader{
-    background: #000  url("../space-tourism-website-main/starter-code/assets/loading.gif") no-repeat center center;
+    background: #000  url("../starter-code/assets/loading.gif") no-repeat center center;
     margin-top: -16px;
     height: 100vh;
     width: 100%;
@@ -257,7 +255,7 @@ main span{
 
 @media only screen and (max-width: 768px) {
     body{
-        background: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg") no-repeat;
+        background: url("../starter-code/assets/destination/background-destination-tablet.jpg") no-repeat;
         background-size: cover;
         height: 100%;
     }
@@ -322,7 +320,6 @@ main span{
     }
 
     .gr-one{
-        /* margin-left: 3rem; */
         align-items: center;
         justify-content: center;
     }
@@ -359,7 +356,7 @@ main span{
 
 @media only screen and (max-width: 720px) {
     body{
-        background: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg") no-repeat;
+        background: url("../starter-code/assets/destination/background-destination-tablet.jpg") no-repeat;
         background-size: cover;
         height: 100%;
     }
@@ -517,7 +514,7 @@ main span{
 
 
     body{
-        background: url("../space-tourism-website-main/starter-code/assets/destination/background-destination-mobile.jpg") no-repeat;
+        background: url("../starter-code/assets/destination/background-destination-mobile.jpg") no-repeat;
         background-size: cover;
         height: 100%;
     }

@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/destination.css">
+  <link rel="stylesheet" href="../css/technology.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
@@ -22,57 +22,48 @@
     <header>
       <div class="wrapper">
         <div class="logo">
-          <img src="assets/shared/logo.svg" alt="">
+          <img src="./assets/shared/logo.svg" alt="">
         </div>
         <div class="hamburger-btn">
-          <img src="assets/shared/icon-hamburger.svg" alt="" onclick="show()" id="open-btn">
+          <img src="../starter-code/assets/shared/icon-hamburger.svg" alt="" onclick="show()" id="open-btn">
         </div>
         <div class="right-sec">
           <div class="line"></div>
           <nav id="navigation">
             <a href="../index.html"><span>00</span>Home</a>
-            <a href="javascript:void(0)" class="active"><span>01</span>Destination</a>
+            <a href="destination-moon.html"><span>01</span>Destination</a>
             <a href="crew-commander.html"><span>02</span>Crew</a>
-            <a href="technology-vehicle.html"><span>03</span>Technology</a>
-            <img src="assets/shared/icon-close.svg" alt="" onclick="remove()" class="close-btn">
+            <a href="javascript:void(0)" class="active"><span>03</span>Technology</a>
+            <img src="../starter-code/assets/shared/icon-close.svg" alt=""  onclick="remove()" class="close-btn">
           </nav>
         </div>
       </div>
     </header>
 
     <main>
-      <h1><span>01</span>Pick your destination</h1>
+      <h1><span>03</span>Space launch 101</h1>
       <div class="inner-main">
-        <img src="assets/destination/image-moon.png" alt="">
         <div class="gr-one">
           <div class="gr-two">
-            <a href="javascript:void(0)" class="active">Moon</a>
-            <a href="./destination-mars.html">Mars</a>
-            <a href="./destination-europa.html">Europa</a>
-            <a href="./destination-titan.html">Titan</a>
+            <a href="./technology-vehicle.html">1</a>
+            <a href="./technology-spaceport.html">2</a>
+            <a href="javascript:void(0)" class="active2">3</a>
           </div>
-          <h1>Moon</h1>
-          <p class="inner-t">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-            regain perspective and come back refreshed. While you’re there, take in some history 
-            by visiting the Luna 2 and Apollo 11 landing sites.
-          </p>
-          <div class="hr"></div>
-          <div class="l-division">
-            <div class="l-division1">
-              <p class="first">Avg. distance</p>
-              <p class="second">384,400 km</p>
-            </div>
-            <div  class="l-division1">
-              <p class="first">Est. travel time</p>
-              <p class="second">3 days</p>
-            </div>
+          <div class="side">
+            <p class="first">The terminology...</p>
+            <h1>Space capsule</h1>
+            <p class="inner-t">
+              A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+              capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+              you'll spend your time during the flight. It includes a space gym, cinema, 
+              and plenty of other activities to keep you entertained.
+            </p>
           </div>
         </div>
+        <img src="assets/technology/image-space-capsule-landscape.jpg" alt="">
       </div>
     </main>
-  </div>
 
-  <script src="../script.js"></script>
-
+    <script src="../script.js"></script>
 </body>
 </html>
